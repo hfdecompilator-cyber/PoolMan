@@ -1,0 +1,120 @@
+COMMANDCUBE™ SERVER PRO - TERMS OF SERVICE
+
+Last Updated: March 2026
+
+================================================================================
+1. ACCEPTANCE OF TERMS
+================================================================================
+
+By downloading, installing, or using CommandCube™ Server Pro (the "Software"),
+you agree to be bound by these Terms of Service.
+
+If you do not agree, do not use this Software.
+
+================================================================================
+2. LICENSE GRANT
+================================================================================
+
+CommandCube™ grants you a non-exclusive, non-transferable, revocable license to:
+
+a) Install and run CommandCube™ Server Pro on your personal computer
+b) Use it for remote script execution on your own devices
+c) Create and execute Python scripts within the platform
+
+All other rights are reserved.
+
+================================================================================
+3. RESTRICTIONS
+================================================================================
+
+You agree NOT to:
+
+a) Reverse engineer, decompile, or disassemble the Software
+b) Copy, modify, or create derivative works
+c) Remove or obscure proprietary notices or labels
+d) Use the Software to develop competing products
+e) Share access with unauthorized users
+f) Distribute the Software without license
+g) Use for illegal or harmful purposes
+h) Attempt to bypass security features
+
+================================================================================
+4. INTELLECTUAL PROPERTY
+================================================================================
+
+All intellectual property in the Software, including patents, copyrights,
+trademarks, and trade secrets, are owned by CommandCube™.
+
+CommandCube™ and associated logos are trademarks of CommandCube™ Inc.
+
+================================================================================
+5. USER RESPONSIBILITY
+================================================================================
+
+You are responsible for:
+
+a) All scripts and code you execute
+b) Maintaining security of your PC credentials
+c) Backing up your data
+d) Compliance with all applicable laws
+e) Not using the Software for harmful purposes
+
+CommandCube™ is not responsible for data loss, damage, or unauthorized access.
+
+================================================================================
+6. DISCLAIMER OF WARRANTY
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
+CommandCube™ makes no warranty that:
+- The Software will meet your requirements
+- The Software will be uninterrupted or error-free
+- Results will be reliable or accurate
+
+USE AT YOUR OWN RISK.
+
+================================================================================
+7. LIMITATION OF LIABILITY
+================================================================================
+
+CommandCube™ shall not be liable for:
+- Data loss or corruption
+- Business interruption
+- Unauthorized access
+- Damages from script execution
+- Any consequential or incidental damages
+
+Maximum liability: Refund of purchase price only.
+
+================================================================================
+8. TERMINATION
+================================================================================
+
+This license is effective until terminated.
+
+CommandCube™ may terminate this license if you:
+- Violate any term of this agreement
+- Use the Software unlawfully
+- Attempt to circumvent security features
+
+Upon termination, you must delete all copies of the Software.
+
+================================================================================
+9. GOVERNING LAW
+================================================================================
+
+These Terms shall be governed by and construed in accordance with
+the laws of [Your Jurisdiction], without regard to conflicts of law.
+
+Any legal action must be filed in the courts of [Your Jurisdiction].
+
+================================================================================
+10. CONTACT
+================================================================================
+
+For questions or legal inquiries:
+Email: legal@commandcube.com
+Address: [Your Legal Address]
+
+================================================================================

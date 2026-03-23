@@ -1,0 +1,223 @@
+END USER LICENSE AGREEMENT (EULA)
+
+COMMANDCUBE™ SERVER PRO - PROFESSIONAL EDITION
+
+================================================================================
+IMPORTANT: READ BEFORE INSTALLING
+================================================================================
+
+This is a legally binding agreement between you ("User") and CommandCube™ Inc.
+("CommandCube").
+
+By clicking "I Agree" or installing the Software, you accept all terms.
+
+================================================================================
+1. PRODUCT DESCRIPTION
+================================================================================
+
+CommandCube™ Server Pro is professional software for:
+- Remote PC control via secure connection
+- Python script execution on local machines
+- Remote access from mobile and web applications
+- Self-hosted deployment
+
+================================================================================
+2. PERMITTED USE
+================================================================================
+
+You may:
+✓ Install on one or more personal computers
+✓ Use for legitimate business purposes
+✓ Execute scripts you create or own
+✓ Share with authorized staff (if business license)
+✓ Backup for personal use
+
+================================================================================
+3. PROHIBITED USE
+================================================================================
+
+You may NOT:
+✗ Reverse engineer or decompile
+✗ Create competitive products
+✗ Redistribute or resell without license
+✗ Modify source code
+✗ Remove trademark/copyright notices
+✗ Use for illegal activities
+✗ Rent, lease, or lend the Software
+✗ Share license keys
+
+VIOLATION = IMMEDIATE TERMINATION + LEGAL ACTION
+
+================================================================================
+4. OWNERSHIP
+================================================================================
+
+You do not own the Software. You have a limited license to use it.
+
+CommandCube™ retains all right, title, and interest, including:
+- All source code
+- All intellectual property
+- All improvements and updates
+- All derivative works
+
+================================================================================
+5. TECHNOLOGY PROTECTION
+================================================================================
+
+The Software uses technology protected by:
+- US Patents (pending)
+- EU Patents (pending)
+- International copyrights
+- Trade secret laws
+
+Circumventing these protections is ILLEGAL under:
+- Digital Millennium Copyright Act (DMCA)
+- Computer Fraud and Abuse Act (CFAA)
+- Similar international laws
+
+================================================================================
+6. UPDATES & MODIFICATIONS
+================================================================================
+
+CommandCube™ may:
+- Update the Software at any time
+- Add new features
+- Remove features
+- Change pricing
+- Modify terms
+
+Updates may be automatic and mandatory.
+
+================================================================================
+7. DATA COLLECTION
+================================================================================
+
+The Software may collect:
+- Usage statistics
+- Error reports
+- System information
+- License key information
+
+All data is used to improve the product and prevent piracy.
+
+No personal information is sold to third parties.
+
+================================================================================
+8. WARRANTY DISCLAIMER
+================================================================================
+
+THIS SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY.
+
+CommandCube™ does NOT warrant:
+- Fitness for purpose
+- Merchantability
+- Non-infringement
+- Reliability
+- Availability
+- Security
+
+YOU USE AT YOUR OWN RISK.
+
+================================================================================
+9. LIABILITY LIMITATION
+================================================================================
+
+CommandCube™ SHALL NOT BE LIABLE FOR:
+
+- Lost data or profits
+- Business interruption
+- Security breaches
+- System failures
+- Any damages whatsoever
+
+EVEN IF CommandCube™ IS NOTIFIED OF SUCH POSSIBILITY.
+
+Total liability limited to amount paid for Software.
+
+================================================================================
+10. TERMINATION
+================================================================================
+
+This license is perpetual but may be terminated if:
+- You breach any term
+- You attempt to reverse engineer
+- You distribute the Software
+- Legal action requires termination
+
+Upon termination:
+- License immediately ends
+- You must delete all copies
+- You lose all rights
+
+CommandCube™ may pursue legal remedies.
+
+================================================================================
+11. INDEMNIFICATION
+================================================================================
+
+You agree to indemnify CommandCube™ against:
+- Claims arising from your use
+- Scripts you execute
+- Violations of laws
+- Third-party claims
+- Attorney fees and damages
+
+================================================================================
+12. JURISDICTION
+================================================================================
+
+This agreement is governed by the laws of [YOUR JURISDICTION].
+
+Any disputes must be resolved in courts of [YOUR JURISDICTION].
+
+You waive rights to trial by jury and class action.
+
+================================================================================
+13. SEVERABILITY
+================================================================================
+
+If any provision is unenforceable, remaining provisions continue in effect.
+
+Invalid provisions are reformed to be valid and enforceable.
+
+================================================================================
+14. ENTIRE AGREEMENT
+================================================================================
+
+This EULA, along with TRADEMARK_AND_IP.txt and TERMS_OF_SERVICE.txt,
+constitutes the entire agreement.
+
+No other terms, oral or written, are binding.
+
+CommandCube™ reserves the right to modify terms at any time.
+
+================================================================================
+15. ACKNOWLEDGMENT
+================================================================================
+
+BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT:
+
+☐ You have read and understand this agreement
+☐ You agree to be bound by all terms
+☐ You accept all limitations and disclaimers
+☐ You understand the restrictions
+☐ You will comply with all laws
+
+If you do not agree, do not install the Software.
+
+================================================================================
+SUPPORT & CONTACT
+================================================================================
+
+For licensing questions:
+Email: licensing@commandcube.com
+
+For legal inquiries:
+Email: legal@commandcube.com
+
+For technical support:
+Email: support@commandcube.com
+
+================================================================================
+© 2026 CommandCube™ Inc. All Rights Reserved.
+================================================================================

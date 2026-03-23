@@ -1,0 +1,92 @@
+COMMANDCUBE™ - TRADEMARK & INTELLECTUAL PROPERTY NOTICE
+
+================================================================================
+TRADEMARK REGISTRATION
+================================================================================
+
+Product Name: CommandCube™
+Tagline: "Remote PC Control. Secured."
+Developer: [Your Company Name]
+Date: 2026
+
+TRADEMARK SYMBOLS USAGE:
+- CommandCube™ (™ for unregistered trademark in US)
+- CommandCube® (® after US registration)
+- CommandCube™ Server Pro
+- CommandCube™ Remote Control
+
+================================================================================
+INTELLECTUAL PROPERTY RIGHTS
+================================================================================
+
+PROPRIETARY TECHNOLOGY:
+1. Secure WebSocket-based PC control architecture
+2. Automatic dependency installation system
+3. Persistent script library management
+4. Professional PyQt5 UI implementation
+5. One-click deployment EXE packaging
+6. Auto-connection and visual status system
+
+PATENTS PENDING:
+- US Patent Application: "Automated Self-Hosted Remote Execution System"
+- EU Patent Application: "Secure Script Execution Architecture"
+
+================================================================================
+OWNERSHIP STATEMENT
+================================================================================
+
+All intellectual property, including but not limited to:
+- Source code
+- Architecture design
+- UI/UX implementation
+- Installation methodology
+- Script execution framework
+- Business model
+
+Are the exclusive property of [Your Company Name].
+
+Unauthorized reproduction, distribution, or use is strictly prohibited.
+
+================================================================================
+LICENSE RESTRICTIONS
+================================================================================
+
+Users are PERMITTED to:
+✓ Use CommandCube™ for personal or business PC remote control
+✓ Execute Python scripts via the platform
+✓ Modify scripts within their own environment
+
+Users are PROHIBITED from:
+✗ Reverse engineering the source code
+✗ Copying the implementation method
+✗ Creating derivative products
+✗ Distributing modified versions
+✗ Commercial resale without license
+✗ Removing trademark notices
+✗ Claiming ownership of the technology
+
+================================================================================
+ENFORCEMENT
+================================================================================
+
+Violations of this trademark and IP notice will result in:
+1. Immediate cease and desist notice
+2. Legal action for damages
+3. Injunctive relief
+4. Attorney fees recovery
+
+Contact: [Your Legal Contact]
+
+================================================================================
+COPYRIGHT NOTICE
+================================================================================
+
+© 2026 [Your Company Name]. All Rights Reserved.
+
+This product contains proprietary and confidential information.
+Unauthorized access or use is a violation of law.
+
+CommandCube™ is a trademark of [Your Company Name].
+All other trademarks are property of their respective owners.
+
+================================================================================
