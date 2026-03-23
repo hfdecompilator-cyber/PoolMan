@@ -1,367 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CommandCube Remote Control</title>
+    <title>CommandCube</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            color: #fff;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 500px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .header h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #00d4ff, #0099cc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .header p {
-            color: #888;
-            font-size: 14px;
-        }
-        
-        .connection-panel {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .input-group {
-            margin-bottom: 15px;
-        }
-        
-        .input-group label {
-            display: block;
-            font-size: 12px;
-            text-transform: uppercase;
-            color: #00d4ff;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-        
-        .input-group input {
-            width: 100%;
-            padding: 12px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            color: #fff;
-            font-size: 14px;
-        }
-        
-        .input-group input:focus {
-            outline: none;
-            border-color: #00d4ff;
-            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
-        }
-        
-        .btn {
-            width: 100%;
-            padding: 14px;
-            background: linear-gradient(135deg, #00d4ff, #0099cc);
-            border: none;
-            border-radius: 8px;
-            color: #000;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
-        }
-        
-        .btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-        
-        .status {
-            text-align: center;
-            font-size: 12px;
-            margin-top: 15px;
-            color: #888;
-        }
-        
-        .status.connected {
-            color: #00ff88;
-        }
-        
-        .status.error {
-            color: #ff4444;
-        }
-        
-        .buttons-grid {
-            display: none;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        
-        .buttons-grid.active {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        
-        .button-item {
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            color: #fff;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .button-item:hover {
-            background: rgba(0, 212, 255, 0.2);
-            border-color: #00d4ff;
-            transform: translateY(-2px);
-        }
-        
-        .button-item.active {
-            background: rgba(0, 212, 255, 0.3);
-            border-color: #00d4ff;
-        }
-        
-        .output {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 20px;
-            font-family: 'Courier New', monospace;
-            font-size: 12px;
-            max-height: 300px;
-            overflow-y: auto;
-            display: none;
-        }
-        
-        .output.active {
-            display: block;
-        }
-        
-        .category-label {
-            grid-column: 1 / -1;
-            font-size: 10px;
-            text-transform: uppercase;
-            color: #00d4ff;
-            font-weight: 600;
-            margin-top: 10px;
-            margin-bottom: 0;
-            padding: 0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial; background: #1a1a2e; color: #fff; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 { text-align: center; margin: 20px 0; }
+        .input-box { margin: 20px 0; }
+        textarea { width: 100%; height: 150px; padding: 10px; background: #16213e; color: #fff; border: 1px solid #0f3460; font-family: monospace; }
+        button { width: 100%; padding: 12px; background: #00d4ff; color: #000; border: none; font-weight: bold; cursor: pointer; margin: 10px 0; }
+        button:hover { background: #00a8cc; }
+        .output { background: #0f3460; padding: 15px; margin: 20px 0; border-radius: 5px; white-space: pre-wrap; word-wrap: break-word; min-height: 100px; max-height: 400px; overflow-y: auto; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>⚡ CommandCube</h1>
-            <p>Remote PC Control</p>
+        <h1>CommandCube - Execute Python</h1>
+        
+        <div class="input-box">
+            <textarea id="code" placeholder="Enter Python code here..."></textarea>
         </div>
         
-        <div class="connection-panel">
-            <div class="input-group">
-                <label>PC IP Address</label>
-                <input type="text" id="ipInput" placeholder="e.g., 192.168.1.100 or localhost">
-            </div>
-            <div class="input-group">
-                <label>Port (default: 8765)</label>
-                <input type="number" id="portInput" placeholder="8765" value="8765">
-            </div>
-            <button class="btn" id="connectBtn" onclick="connect()">Connect</button>
-            <div class="status" id="status">Ready to connect</div>
-        </div>
+        <button onclick="runCode()">Execute</button>
+        <button onclick="clearCode()">Clear</button>
         
-        <div class="buttons-grid" id="buttonsGrid"></div>
-        
-        <div class="output" id="output"></div>
+        <div class="output" id="output">Output will appear here...</div>
     </div>
-    
+
     <script>
-        let ws = null;
-        const ipInput = document.getElementById('ipInput');
-        const portInput = document.getElementById('portInput');
-        const connectBtn = document.getElementById('connectBtn');
-        const status = document.getElementById('status');
-        const buttonsGrid = document.getElementById('buttonsGrid');
-        const output = document.getElementById('output');
-        
-        const COMMANDS = {
-            "System": {
-                "System Info": { category: "System", button: "System Info" },
-                "Memory": { category: "System", button: "Memory Usage" },
-                "CPU": { category: "System", button: "CPU Cores" },
-                "Speed": { category: "System", button: "Network Speed" },
-                "Uptime": { category: "System", button: "Uptime" }
-            },
-            "Files": {
-                "Documents": { category: "Files", button: "List Documents" },
-                "Large Files": { category: "Files", button: "Find Large Files" },
-                "Desktop": { category: "Files", button: "Desktop Files" },
-                "Downloads": { category: "Files", button: "Download Count" },
-                "Recent": { category: "Files", button: "Recent Files" }
-            },
-            "Control": {
-                "Shutdown": { category: "Control", button: "Shutdown" },
-                "Restart": { category: "Control", button: "Restart" },
-                "Lock": { category: "Control", button: "Lock Screen" },
-                "Sleep": { category: "Control", button: "Sleep" },
-                "Volume ↑": { category: "Control", button: "Volume Up" }
-            },
-            "Network": {
-                "IP": { category: "Network", button: "IP Address" },
-                "WiFi": { category: "Network", button: "WiFi Networks" },
-                "Speed Test": { category: "Network", button: "Internet Speed" },
-                "Ping": { category: "Network", button: "Ping Google" },
-                "DNS": { category: "Network", button: "DNS Lookup" }
-            },
-            "Browser": {
-                "YouTube": { category: "Browser", button: "Open YouTube" },
-                "Google": { category: "Browser", button: "Open Google" },
-                "GitHub": { category: "Browser", button: "Open GitHub" },
-                "ChatGPT": { category: "Browser", button: "Open ChatGPT" },
-                "Gmail": { category: "Browser", button: "Open Gmail" }
-            },
-            "Apps": {
-                "Notepad": { category: "Apps", button: "Open Notepad" },
-                "Calc": { category: "Apps", button: "Open Calculator" },
-                "Paint": { category: "Apps", button: "Open Paint" },
-                "PowerShell": { category: "Apps", button: "Open PowerShell" },
-                "TaskMgr": { category: "Apps", button: "Open Task Manager" }
-            }
-        };
-        
-        function connect() {
-            const ip = ipInput.value.trim() || 'localhost';
-            const port = portInput.value || '8765';
+        async function runCode() {
+            const code = document.getElementById('code').value;
+            const output = document.getElementById('output');
             
-            if (ws && ws.readyState === WebSocket.OPEN) {
-                ws.close();
+            if (!code.trim()) {
+                output.textContent = 'Enter code first';
                 return;
             }
             
-            status.textContent = '⏳ Connecting...';
-            status.className = 'status';
+            output.textContent = 'Running...';
             
             try {
-                ws = new WebSocket(`ws://${ip}:${port}`);
-                
-                ws.onopen = () => {
-                    status.textContent = '✅ Connected!';
-                    status.className = 'status connected';
-                    connectBtn.textContent = 'Disconnect';
-                    renderButtons();
-                    output.classList.add('active');
-                };
-                
-                ws.onmessage = (e) => {
-                    const data = JSON.parse(e.data);
-                    if (data.type === 'result') {
-                        appendOutput(`${data.button}: ${data.output}`);
-                    } else if (data.type === 'error') {
-                        appendOutput(`Error: ${data.message}`);
-                    }
-                };
-                
-                ws.onerror = () => {
-                    status.textContent = '❌ Connection failed';
-                    status.className = 'status error';
-                    connectBtn.textContent = 'Connect';
-                };
-                
-                ws.onclose = () => {
-                    status.textContent = '❌ Disconnected';
-                    status.className = 'status error';
-                    connectBtn.textContent = 'Connect';
-                    buttonsGrid.classList.remove('active');
-                    output.classList.remove('active');
-                };
-            } catch (err) {
-                status.textContent = `❌ ${err.message}`;
-                status.className = 'status error';
-            }
-        }
-        
-        function renderButtons() {
-            buttonsGrid.innerHTML = '';
-            Object.entries(COMMANDS).forEach(([category, buttons]) => {
-                const label = document.createElement('div');
-                label.className = 'category-label';
-                label.textContent = category;
-                buttonsGrid.appendChild(label);
-                
-                Object.entries(buttons).forEach(([name, cmd]) => {
-                    const btn = document.createElement('button');
-                    btn.className = 'button-item';
-                    btn.textContent = name;
-                    btn.onclick = () => executeCommand(cmd, btn);
-                    buttonsGrid.appendChild(btn);
+                const response = await fetch('http://localhost:9000/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ script: code })
                 });
-            });
-            buttonsGrid.classList.add('active');
-        }
-        
-        function executeCommand(cmd, btn) {
-            if (!ws || ws.readyState !== WebSocket.OPEN) {
-                appendOutput('Not connected');
-                return;
+                
+                const data = await response.json();
+                output.textContent = data.output || 'No output';
+            } catch (e) {
+                output.textContent = 'Error: ' + e.message;
             }
-            
-            btn.classList.add('active');
-            ws.send(JSON.stringify({ type: 'button', ...cmd }));
-            setTimeout(() => btn.classList.remove('active'), 500);
         }
         
-        function appendOutput(text) {
-            const timestamp = new Date().toLocaleTimeString();
-            output.innerHTML += `<div>[${timestamp}] ${text}</div>`;
-            output.scrollTop = output.scrollHeight;
+        function clearCode() {
+            document.getElementById('code').value = '';
+            document.getElementById('output').textContent = 'Output will appear here...';
         }
         
-        // Load saved IP
-        window.addEventListener('load', () => {
-            const saved = localStorage.getItem('commandcube-ip');
-            if (saved) ipInput.value = saved;
-        });
+        // Load saved code
+        window.onload = () => {
+            const saved = localStorage.getItem('commandcube-code');
+            if (saved) document.getElementById('code').value = saved;
+        };
         
-        ipInput.addEventListener('change', () => {
-            localStorage.setItem('commandcube-ip', ipInput.value);
+        // Save code
+        document.getElementById('code').addEventListener('change', () => {
+            localStorage.setItem('commandcube-code', document.getElementById('code').value);
         });
     </script>
 </body>
