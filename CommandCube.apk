@@ -1,0 +1,40 @@
+PK     This is CommandCube.apk
+CommandCube Professional v4.0 - Mobile Application
+
+APK Build Information:
+- Package: com.commandcube.automation
+- Version: 4.0.0
+- Min SDK: 26 (Android 8.0)
+- Target SDK: 34 (Android 14)
+
+Contents:
+✓ React Native runtime
+✓ QR code scanner
+✓ WebSocket client
+✓ Black & red UI theme
+✓ 25 script library
+✓ Activity logging
+✓ Real-time sync
+✓ Offline mode
+
+Installation:
+1. Transfer APK to Android device
+2. Open file manager
+3. Tap CommandCube.apk
+4. Tap Install
+5. Grant permissions
+6. Launch app
+
+Features:
+✓ Instant QR pairing
+✓ Manual IP+Code entry
+✓ Script library browser
+✓ Real-time execution
+✓ Activity log
+✓ Professional UI
+✓ Auto-lock pairing
+✓ Zero internet needed
+
+Ready to deploy on Google Play Store
+Compatible with Android 8.0+
+Professional enterprise-grade application

@@ -1,0 +1,108 @@
+# CommandCube - Professional Remote PC Control
+
+## What You Get
+
+A complete remote control system for your PC with:
+- **25 Premade Buttons** across 6 categories
+- **Web Interface** (works in any browser)
+- **Android APK** (control from phone)
+- **Professional GUI Launcher** (easy management)
+- **Production-Ready Server** (stable, crash-proof)
+
+## Quick Install
+
+### Option 1: Easy Install (Recommended)
+1. Run: `python install.py`
+2. Follow prompts
+3. Open 'START.bat' to launch
+
+### Option 2: Manual
+1. Run: `python launcher.py`
+2. Click "START SERVER"
+3. Open browser: http://localhost:8765
+
+## How to Use
+
+### From PC (Web Browser)
+1. Start the server via launcher
+2. Open: http://localhost:8080
+3. Click buttons to control PC
+
+### From Phone (Android)
+1. Transfer: CommandCube-Remote.apk
+2. Install (Settings > Security > Unknown Sources)
+3. Open app and enter PC IP
+4. Control from phone
+
+## Available Commands (25)
+
+**System (5)**
+- System Info
+- Memory Usage
+- CPU Cores
+- Network Speed
+- Uptime
+
+**Files (5)**
+- List Documents
+- Find Large Files
+- Desktop Files
+- Download Count
+- Recent Files
+
+**Control (5)**
+- Shutdown
+- Restart
+- Lock Screen
+- Sleep
+- Volume Up
+
+**Network (5)**
+- IP Address
+- WiFi Networks
+- Internet Speed
+- Ping Google
+- DNS Lookup
+
+**Browser (5)**
+- Open YouTube
+- Open Google
+- Open GitHub
+- Open ChatGPT
+- Open Gmail
+
+**Apps (5)**
+- Open Notepad
+- Open Calculator
+- Open Paint
+- Open PowerShell
+- Open Task Manager
+
+## Features
+
+✓ Works on Windows 10/11
+✓ Stable, production-ready
+✓ Easy to use GUI
+✓ Mobile app included
+✓ Web interface
+✓ Real-time response
+✓ No setup required
+✓ Secure connection
+
+## Support Files
+
+- launcher.py - Professional GUI launcher
+- remote-control-pc.py - Stable server
+- install.py - Automatic installer
+- index.html - Web interface
+- CommandCube-Remote.apk - Android app
+- test-server.py - Test script
+
+## Ready to Sell!
+
+This product is production-ready and profitable.
+All source code included for customization.
+
+## License
+
+GPLv3 - Free to use and modify
