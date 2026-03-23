@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CommandCube Server - Executes Custom Scripts"""
+"""CommandCube - Execute ANY Python Script"""
 
 import asyncio
 import json
@@ -13,36 +13,18 @@ except:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "websockets", "-q"])
     import websockets
 
-def load_commands():
-    """Load commands from customization file"""
-    config = Path("commands.json")
-    if config.exists():
-        with open(config) as f:
-            return json.load(f)
-    return {}
-
-COMMANDS = load_commands()
-
-async def execute_command(category, button):
-    """Execute command and return output"""
+async def execute_script(script_code):
+    """Execute ANY Python script"""
     try:
-        if category not in COMMANDS or button not in COMMANDS[category]:
-            return "Command not found"
-        
-        script = COMMANDS[category][button]
-        
-        # Run as Python script
         result = subprocess.run(
-            [sys.executable, "-c", script],
+            [sys.executable, "-c", script_code],
             capture_output=True,
             text=True,
-            timeout=10
+            timeout=30
         )
-        
-        return result.stdout or result.stderr or "Executed"
-    
+        return result.stdout + result.stderr
     except subprocess.TimeoutExpired:
-        return "Command timeout"
+        return "Script timeout (30s max)"
     except Exception as e:
         return f"Error: {str(e)}"
 
@@ -51,20 +33,23 @@ async def handle(ws):
     try:
         async for msg in ws:
             data = json.loads(msg)
-            category = data.get("category")
-            button = data.get("button")
             
-            output = await execute_command(category, button)
-            await ws.send(json.dumps({"output": output}))
+            # Accept ANY Python code
+            script = data.get("script") or data.get("code")
+            
+            if script:
+                output = await execute_script(script)
+                await ws.send(json.dumps({"output": output}))
+            else:
+                await ws.send(json.dumps({"error": "No script provided"}))
     except:
         pass
 
 async def main():
     """Start server"""
-    print("[+] CommandCube Server")
+    print("[+] CommandCube - Python Script Executor")
     print("[+] Port: 8765")
-    print(f"[+] Commands: {sum(len(v) for v in COMMANDS.values())}")
-    print("[+] Ready to execute scripts\n")
+    print("[+] Ready to execute ANY Python code\n")
     
     async with websockets.serve(handle, "0.0.0.0", 8765):
         await asyncio.Future()
