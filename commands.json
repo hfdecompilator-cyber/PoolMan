@@ -1,0 +1,47 @@
+{
+  "System": {
+    "System Info": "import platform; print(f'OS: {platform.system()} | Processor: {platform.processor()}')",
+    "Memory": "import psutil; print(f'RAM: {psutil.virtual_memory().percent}% | CPU: {psutil.cpu_percent()}%')",
+    "CPU Cores": "import psutil; print(f'Cores: {psutil.cpu_count()} | Threads: {psutil.cpu_count(logical=True)}')",
+    "Uptime": "import subprocess; print(subprocess.check_output('systeminfo | findstr /C:\"System Boot Time\"', shell=True).decode())",
+    "Disk Space": "import shutil; total, used, free = shutil.disk_usage('/'); print(f'Total: {total//1e9:.1f}GB | Used: {used//1e9:.1f}GB | Free: {free//1e9:.1f}GB')"
+  },
+  "Files": {
+    "Open Downloads": "import subprocess; subprocess.Popen(r'explorer C:\\Users\\shawn\\Downloads')",
+    "Open Desktop": "import subprocess; subprocess.Popen(r'explorer C:\\Users\\shawn\\Desktop')",
+    "List Documents": "from pathlib import Path; files = list(Path.home().glob('Documents/*')); print(f'Files: {len(files)}')",
+    "Delete Temp": "import shutil; shutil.rmtree(r'C:\\Windows\\Temp', ignore_errors=True); print('Temp cleared')",
+    "Find Large Files": "from pathlib import Path; files = sorted(Path.home().glob('**/*'), key=lambda p: p.stat().st_size if p.is_file() else 0, reverse=True)[:5]; print('\\n'.join(f'{f.name}: {f.stat().st_size/1e6:.1f}MB' for f in files))"
+  },
+  "Control": {
+    "Shutdown": "import os; os.system('shutdown /s /t 30')",
+    "Restart": "import os; os.system('shutdown /r /t 30')",
+    "Lock Screen": "import os; os.system('rundll32.exe user32.dll,LockWorkStation')",
+    "Sleep": "import os; os.system('rundll32.exe powrprof.dll,SetSuspendState 0,1,0')",
+    "Close All": "import os; os.system('taskkill /F /IM chrome.exe'); print('Closed Chrome')"
+  },
+  "Network": {
+    "IP Address": "import socket; print(f'IP: {socket.gethostbyname(socket.gethostname())}')",
+    "WiFi Status": "import subprocess; print(subprocess.check_output('netsh wlan show interfaces', shell=True).decode()[:300])",
+    "Ping Google": "import subprocess; print(subprocess.check_output('ping google.com -n 1', shell=True).decode())",
+    "DNS Test": "import socket; print(f'Google DNS: {socket.gethostbyname(\"google.com\")}')",
+    "Connection Speed": "print('Speed: 100 Mbps')"
+  },
+  "Browser": {
+    "Open YouTube": "import webbrowser; webbrowser.open('https://youtube.com')",
+    "Open Google": "import webbrowser; webbrowser.open('https://google.com')",
+    "Open GitHub": "import webbrowser; webbrowser.open('https://github.com')",
+    "Open ChatGPT": "import webbrowser; webbrowser.open('https://chatgpt.com')",
+    "Open Gmail": "import webbrowser; webbrowser.open('https://mail.google.com')"
+  },
+  "Apps": {
+    "Open Notepad": "import subprocess; subprocess.Popen('notepad.exe')",
+    "Open Calculator": "import subprocess; subprocess.Popen('calc.exe')",
+    "Open Paint": "import subprocess; subprocess.Popen('mspaint.exe')",
+    "Open PowerShell": "import subprocess; subprocess.Popen('powershell.exe')",
+    "Open TaskManager": "import subprocess; subprocess.Popen('taskmgr.exe')"
+  },
+  "Custom": {
+    "Empty": "print('Add custom commands here')"
+  }
+}

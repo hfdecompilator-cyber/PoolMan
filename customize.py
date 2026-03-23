@@ -72,7 +72,14 @@ def add_command(commands):
         print("Invalid name")
         return
     
-    cmd_code = input("Command (Python code or description): ").strip()
+    print("\nEnter Python code to execute:")
+    print("Examples:")
+    print("  import webbrowser; webbrowser.open('https://spotify.com')")
+    print("  import subprocess; subprocess.Popen('notepad.exe')")
+    print("  print('Hello World')")
+    print("  import os; os.system('cls')")
+    print()
+    cmd_code = input("Code: ").strip()
     if not cmd_code:
         print("Invalid code")
         return
@@ -97,7 +104,8 @@ def edit_command(commands):
         return
     
     print(f"Current: {commands[category][cmd_name]}")
-    new_code = input("New code: ").strip()
+    print("\nEnter new Python code:")
+    new_code = input("Code: ").strip()
     
     if new_code:
         commands[category][cmd_name] = new_code
